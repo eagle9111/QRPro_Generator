@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms and Policy"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+
+            android:text="By using this app, you automatically accept the following terms and conditions:"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+
+            android:text="1. The app generates QR codes, barcodes, Data Matrix, and Aztec codes from text input. You are responsible for the use and sharing of the generated codes.\n\n"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+
+            android:text="2. All data generated using this app is stored locally on your device. The app does not collect or store user data remotely.\n\n"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+
+            android:text="3. The app is provided \as is\ without any warranties of any kind, either expressed or implied. We are not responsible for any damages or losses caused by the use of this app.\n\n"
+        android:textSize="14sp"
+        android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+
+            android:text="4. All intellectual property rights, including copyrights and trademarks, for this app and its contents belong to the app developer. Unauthorized reproduction, distribution, or reverse engineering of this app is strictly prohibited.\n\n"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"
+            android:text="5. By continuing to use this app, you agree to comply with all applicable laws and regulations, including those regarding the use of generated QR codes and barcodes.\n\n"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+
+            android:text="6. The developer reserves the right to update these terms and conditions at any time without prior notice. It is your responsibility to review them regularly.\n\n"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"
+            android:text="By using this app, you acknowledge that you have read, understood, and agreed to these terms and conditions."
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+</ScrollView>

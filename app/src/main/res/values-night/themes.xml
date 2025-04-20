@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.QRProScanner" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here -->
+        <item name="colorPrimary">#000000</item> <!-- Primary color -->
+        <item name="colorPrimaryDark">#000000</item> <!-- Deprecated for older APIs -->
+        <item name="android:statusBarColor">#000000</item> <!-- Explicitly set for Android devices -->
+
+        <!-- Navigation bar background -->
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+</resources>

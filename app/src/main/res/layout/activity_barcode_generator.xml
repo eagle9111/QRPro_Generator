@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F4F8"
+    android:padding="16dp"
+    tools:context=".QRCodeGenerator">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:contentDescription="Back"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BarCode Generator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Input Section -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilInputData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etInputData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text to generate BarCode"
+            android:inputType="text"
+            android:textColor="#333333"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Generate Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGenerate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:text="Generate BarCode"
+        app:cornerRadius="8dp"/>
+
+    <!-- Progress Indicator -->
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <!-- QR Code Display -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardQRCode"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/ivBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:padding="16dp"
+            android:background="#F5F5F5"
+            android:contentDescription="Generated QR Code"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

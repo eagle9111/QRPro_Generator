@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.QRProScanner" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here -->
+        <item name="colorPrimary">#000000</item> <!-- Primary color (used for the app's main UI elements) -->
+        <item name="colorPrimaryVariant">#000000</item> <!-- Darker variant of primary color (for older APIs) -->
+        <item name="colorSecondary">#000000</item> <!-- Secondary color (used for accents) -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- Text/icons on primary background -->
+        <item name="colorOnSecondary">#FFFFFF</item> <!-- Text/icons on secondary background -->
+
+        <!-- Status bar background -->
+        <item name="android:statusBarColor">#000000</item>
+
+        <!-- Navigation bar background -->
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+
+    <!-- Application theme -->
+    <style name="Theme.QRProScanner" parent="Base.Theme.QRProScanner" />
+</resources>
